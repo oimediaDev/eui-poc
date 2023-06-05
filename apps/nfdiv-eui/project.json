@@ -9,6 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "localize": true,
         "outputPath": "dist/apps/nfdiv-eui",
         "index": "apps/nfdiv-eui/src/index.html",
         "main": "apps/nfdiv-eui/src/main.ts",
@@ -19,7 +20,10 @@
           "apps/nfdiv-eui/src/favicon.ico",
           "apps/nfdiv-eui/src/assets"
         ],
-        "styles": ["apps/nfdiv-eui/src/styles.scss"],
+        "styles": [
+          "apps/nfdiv-eui/src/styles.scss",
+          "apps/nfdiv-eui/src/custom-theme.scss"
+        ],
         "scripts": []
       },
       "configurations": {
